@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hjem</title>
+</head>
+<body>
+    <h1>Hjemmeside</h1>
+    <% if (user != "") { %>
+        <h2> <%= user %> er logget inn </h2>
+        <form action="/logout" method="get">
+            <input type="submit" value="Logg ut">
+        </form>
+    <% } else { %>
+        <form action="/login" method="get">
+            <input type="submit" value="Logg inn">
+        </form>
+    <% } %> <br> <br>
+    <form action="/sendmail" method="get">
+        <input type="submit" value="Send mail">
+    </form>
+</body>
+</html>

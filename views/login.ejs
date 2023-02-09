@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logg inn</title>
+</head>
+<body>
+    <h1>Logg inn</h1>    
+    <form action="/login" method="post">
+        <label for="email">email:</label>
+        <input type="email" name="email" required> <br> <br>
+        <label for="password">passord:</label>
+        <input type="password" name="password"> <br> <br>
+        <input type="submit" name="what" value="Logg inn"> <br> <br>
+        <input type="submit" name="what" value="Reset passord nodemailer">
+    </form>
+    <br> <br> <br>
+    <form action="/lagbruker" method="get">
+        <input type="submit" name="lagbruker" id="lagbruker" value="Lag ny bruker">
+    </form>
+    <br> <br> <br>
+    <h2> <%= info %> </h2>
+</body>
+</html>

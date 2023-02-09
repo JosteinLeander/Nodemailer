@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nytt-passord?</title>
+</head>
+<body>
+    <h1>Endre passord for: <%= email %></h1>
+    <form action="/nyttpassord" method="post">
+        <input type="hidden" id="email" name="email" value= <%= email %> />
+        <label for="password">passord:</label>
+        <input type="password" name="password"> <br> <br>
+        <input type="submit" name="what" value="Reset passord">
+    </form>
+    <br> <br> <br>
+    <form action="/login" method="get">
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>

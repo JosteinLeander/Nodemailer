@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Mail</title>
+</head>
+<body>
+    <h1>Send mail med nodemailer</h1>
+    <form action="/sendmail" method="post">
+        <label for="to">Til:</label>
+        <input type="email" name="to" required> <br> <br>
+        <label for="subject">Emne:</label>
+        <input type="text" name="subject" required> <br> <br>
+        <label for="text">Tekst:</label>
+        <input type="text" name="text" required> <br> <br>
+        <input type="submit" value="Send mail"> <br> <br> <br> <br>
+    </form>
+    <h2> <%= info %> </h2> <br> <br>
+    <form action="/" method="get">
+        <input type="submit" value="Hjem">
+    </form>
+</body>
+</html>
