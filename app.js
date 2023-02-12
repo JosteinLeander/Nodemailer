@@ -86,12 +86,6 @@ app.post("/login", async (req, res) => {
     } 
 })
 
-app.get("/logout", (req, res) => {
-    console.log("User logged out", auth.currentUser.email)
-    signOut(auth);
-    res.redirect('/')
-})
-
 app.get("/sendmail", (req, res) => {
     let info = "";
     res.render("sendmail.ejs", { info: info })

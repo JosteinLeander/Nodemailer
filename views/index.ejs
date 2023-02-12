@@ -10,14 +10,12 @@
     <h1>Hjemmeside</h1>
     <% if (user != "") { %>
         <h2> <%= user %> er logget inn </h2>
-        <form action="/logout" method="get">
-            <input type="submit" value="Logg ut">
-        </form>
-    <% } else { %>
-        <form action="/login" method="get">
-            <input type="submit" value="Logg inn">
-        </form>
-    <% } %> <br> <br>
+    <% } %>
+    <br> <br>
+    <form action="/login" method="get">
+        <input type="submit" value="Logg inn">
+    </form>
+    <br> <br>
     <form action="/sendmail" method="get">
         <input type="submit" value="Send mail">
     </form>
