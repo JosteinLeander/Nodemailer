@@ -16,8 +16,8 @@ mongoose.set("strictQuery", false);
 const dbURI = "mongodb+srv://JosteinLL:ForSkole@cluster0.nqsbe58.mongodb.net/nodem?retryWrites=true&w=majority";
 mongoose.connect(dbURI)
   .then(() => {
-    app.listen(3000);
-    console.log("listeining on port 3000")
+    app.listen(80);
+    console.log("listeining on port 80")
   })
   .catch((err) => {
     console.log(err)
